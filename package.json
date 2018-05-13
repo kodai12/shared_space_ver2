@@ -4,6 +4,10 @@
   "description": "Nuxt.js project",
   "author": "sakochik <sakochi.kodai1209@gmail.com>",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodai12/shared_space_ver2"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -12,7 +16,14 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js, vue}": [
+      "npm run lint",
+      "git add"
+    ]
   },
   "dependencies": {
     "element-ui": "^2.3.8",
@@ -28,6 +39,8 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.0",
     "node-sass": "^4.9.0",
     "sanitize.css": "^5.0.0",
     "sass-loader": "^7.0.1"
