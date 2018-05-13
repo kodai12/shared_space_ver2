@@ -40,6 +40,7 @@ module.exports = {
     '~plugins/element-ui',
   ],
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    'sanitize.css/sanitize.css'
   ]
 }
