@@ -17,9 +17,9 @@ export default {
         'sample name1',
         'sample name2'
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style>
