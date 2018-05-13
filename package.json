@@ -10,13 +10,19 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
     "element-ui": "^2.3.8",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
+    "@storybook/addon-centered": "^3.4.4",
+    "@storybook/addon-knobs": "^3.4.4",
+    "@storybook/addon-links": "^3.4.4",
+    "@storybook/vue": "^3.4.4",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
